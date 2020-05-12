@@ -1,17 +1,15 @@
 body {
-  background-color: #674BB1;
-  background-image: url("images/bg-desktop.svg");
-}
-
-h1 {
-  color: #fff;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  background-color: #674bb1;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
 }
 
 .flex {
   display: -ms-grid;
   display: grid;
+  background: url("../images/bg-desktop.svg");
+  background-size: 100%;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
@@ -26,6 +24,33 @@ h1 {
   margin-right: 3rem;
 }
 
+.flex .content h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.flex .content p {
+  overflow: hidden;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex .content input[type="button"] {
+  color: #fff;
+  background-color: #674bb1;
+  padding: 10px;
+  width: 117px;
+  border-radius: 21px;
+  border-color: #fff;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .Co {
   margin-left: 5px;
   height: 26px;
@@ -33,16 +58,7 @@ h1 {
   background-color: #674bb1;
   border-radius: 100px;
   border-color: #ffffff;
-}
-
-.fab:active {
-  color: #2f1a65;
-}
-
-.Co:active {
-  color: #2f1a65;
-  background-color: #fff;
-  border-color: #2f1a65;
+  outline: none;
 }
 
 .footer {
@@ -52,40 +68,8 @@ h1 {
   padding-top: 76px;
 }
 
-.p {
-  color: #fff;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-}
-
 .fab {
   color: #fff;
-}
-
-.btn {
-  color: #fff;
-  background-color: #674BB1;
-  padding: 10px;
-  width: 117px;
-  border-radius: 21px;
-  border-color: #fff;
-}
-
-.btn:active {
-  color: #2f1a65;
-  background-color: #fff;
-  padding: 10px;
-  width: 117px;
-  border-radius: 21px;
-  border-color: #2f1a65;
-}
-
-@media screen and (max-width: 500px x 265px) {
-  body {
-    text-align: center;
-    background-color: #674BB1;
-    background-image: url("images/bg-mobile.svg");
-  }
 }
 
 .logo {
@@ -101,5 +85,41 @@ h1 {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: #674bb1;
+    background-image: url("images/bg-mobile.svg");
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url("../images/bg-mobile.svg");
+    background-size: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    padding-right: 3rem;
+  }
+  .flex .img {
+    width: 100%;
+  }
+  .flex .content h1 {
+    font-size: 1rem;
+  }
+  .footer {
+    text-align: center;
+    padding: 2rem 3rem 0 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
