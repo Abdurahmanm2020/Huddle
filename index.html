@@ -8,139 +8,26 @@
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 <script src="https://kit.fontawesome.com/6bd5762926.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-  
-  body{
-  background-color: #674BB1;
-  background-image: url("images/bg-desktop.svg");
-  }
-  
-  h1{
-  color: #fff;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  }
-  
-  .content {
-    width: 396px;
-    display: inline-block;
-}
-  
- .Co {
-    margin-left: 5px;
-    height: 26px;
-    width: 28px;
-    background-color: #674bb1;
-    border-radius: 100px;
-    border-color: #ffffff;
-}
-  
-  .fab:active{
-color: #2f1a65;
-}
-  
-  .Co:active{
-   color: #2f1a65;
-    background-color: #fff;
-    border-color: #2f1a65;
-  }
-  
-  .footer{
-  text-align: end;
-    padding: 39px;
-    padding-bottom: 0px;
-    padding-top: 76px;
-  }
-  
-  .p{
-  color: #fff;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-  }
-  
-  .img {
-    cursor: pointer;
-    padding-right: 47px;
-    padding-top: 23px;
- 
-    display: inline-block;
-    width: 300px;
-    padding-left: 12px;
-    transition: all 3s;
-}
-.fab{
-color: #fff;
-}
 
-.img:hover {
-    width: 305px;
-    transform: rotate(2deg);
-}
-  
-  .btn{
-  color:#fff;
-  background-color: #674BB1;
-  padding: 10px;
-    width: 117px;
-    border-radius: 21px;
-    border-color: #fff;
-  }
-  
-   .btn:active{
-   color: #2f1a65;
-    background-color: #fff;
-  padding: 10px;
-    width: 117px;
-    border-radius: 21px;
-    border-color: #2f1a65;
-  }
-  
-  
-  @media screen and (max-width: 500px x 265px) {
-   body{
-  text-align:center;
-  background-color: #674BB1;
-  background-image: url("images/bg-mobile.svg");
-  }
-  
-}
-  
-  
-  .logo{
-  width: 125px;
-  transition: all 3s;
-
-}
-  
-  .logo:hover{
-  cursor: pointer;
-  width: 145px;
-   transform: rotate(4deg);
-  }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
 
 <div class="logo">
-<img class="logo" src="images/logo.svg" alt="" />
+<img class="logo" src="images/logo.svg" alt="logo" />
  </div>
 
-
+<section class="flex">
 <div class="img">
-<img class="img" src="images/illustration-mockups.svg" alt="" />
+<img class="img" src="images/illustration-mockups.svg" alt="illustration-mockups" />
  </div>
-
-
 
 <div class="content">
   <h1> <i class="fad fa-user-astronaut fa-spin"></i> Build The Community<br> Your Fans Will Love</h1>
@@ -153,12 +40,9 @@ color: #fff;
 <input class="btn" type="button" value="Registar" >
 </div>
 
-
+</section>
 
   <footer class="footer">
-  
-
-  
  <button class="Co"> <i class="fab fa-facebook-f"></i> </button>
   <button class="Co"> <i class="fab fa-twitter"></i> </button>
 <button class="Co"> <i class="fab fa-instagram"></i> </button>

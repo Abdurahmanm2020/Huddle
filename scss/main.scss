@@ -1,0 +1,99 @@
+  
+  body{
+  background-color: #674BB1;
+  background-image: url("images/bg-desktop.svg");
+
+  }
+  
+  h1{
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  }
+  
+  .flex{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 30px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+     margin-left: 3rem;
+     margin-right: 3rem;
+
+     .content{
+         
+     }
+  }
+  
+ .Co {
+    margin-left: 5px;
+    height: 26px;
+    width: 28px;
+    background-color: #674bb1;
+    border-radius: 100px;
+    border-color: #ffffff;
+}
+  
+  .fab:active{
+color: #2f1a65;
+}
+  
+  .Co:active{
+   color: #2f1a65;
+    background-color: #fff;
+    border-color: #2f1a65;
+  }
+  
+  .footer{
+  text-align: end;
+    padding: 39px;
+    padding-bottom: 0px;
+    padding-top: 76px;
+  }
+  
+  .p{
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  }
+ 
+.fab{
+color: #fff;
+}
+
+  
+  .btn{
+  color:#fff;
+  background-color: #674BB1;
+  padding: 10px;
+    width: 117px;
+    border-radius: 21px;
+    border-color: #fff;
+  }
+  
+   .btn:active{
+   color: #2f1a65;
+    background-color: #fff;
+  padding: 10px;
+    width: 117px;
+    border-radius: 21px;
+    border-color: #2f1a65;
+  }
+  
+  
+  @media screen and (max-width: 500px x 265px) {
+   body{
+  text-align:center;
+  background-color: #674BB1;
+  background-image: url("images/bg-mobile.svg");
+  }
+  
+}
+  
+  .logo{
+  width: 125px;
+  transition: all 3s;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
